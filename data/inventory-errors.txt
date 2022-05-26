@@ -1,0 +1,17 @@
+General Notes: 
+
+1) The formatting of urls labels is at times inconsistent for some CSDs. Whenever "Url1" and "Url2" are present, these are put into an "Other" subdirectory since the data type is unknown.
+2) CSDs with multiple providers (e.g. Toronto) cannot be parsed and auto downloaded given their complex formatting. These CSDs are later downloaded manually.
+3) Many GTFS links seem to point to a general webpage containing transit data, but not to the actual downloadable file itself, making the auto-downloading impossible. These were manually acquired. The inventory file should be updated to actually point to the specific links to facilitate auto-downloading.
+4) Some duplicate GTFS data exist between various CSDs that are covered by the same transit provider. Additionally, these GTFS data cover multiple CSDs. Consequently, when plotting/analyzing these data, we may artificially inflate the number of transit offerings  (singular CSDs are considered to have transit services that actually span multiple CSDs).
+5) While manually collecting certain missing resources, it was noted that the file extension for certain GTFS resources were missing. For example, when downloading data from "transitfeeds" the resulting file would be "download" excluding the file extension. These were corrected manually by adding the ".zip" extension to make explicit the fact that these are compressed archives of GTFS data.
+6) A small number of CSDs contain links to web applications hosting the GTFS data and for which there was no obvious way to download the raw GTFS file. When attempting to auto-download these, we ended up with HTML webpages and, evidently, these should be filtered from any downstream application.
+
+Some specific issues:
+
+Grande Prairie County No 1., ON: Inconsistent use of "Url1, Url2" and "Url(Static GTFS), Url(Realtime GTFS, ..."
+Amherstburg, ON: Inconsistent use of "Url1, Url2" and "Url(Static GTFS), Url(Realtime GTFS, ..."
+Scugog, ON: Url2 contains a description and not a hyperlink
+Saint-Lambert, QC: Inconsistent use of "Url1, Url2" and "Url(Static GTFS), Url(Realtime GTFS, ..."
+Toronto, ON: Sheet formatting is completely different and cannot be automated. The Url(Shapefile) row is incorrectly formatted.
+Waterloo, ON: All links point to an 'about' page and so only the HTML of that page are downloaded.

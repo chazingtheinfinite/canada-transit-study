@@ -1,0 +1,1 @@
+{'num_CSDs': 206, 'num_with_URL': 137, 'Other': 33, 'Static_GTFS': 102, 'CSV': 16, 'ShapeFile': 15, 'KML': 9, 'Realtime_GTFS': 7, 'GeoJSON': 2, 'Map_PDF_JPEG': 9}
