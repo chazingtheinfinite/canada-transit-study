@@ -10,4 +10,12 @@ The `manuscript` directory contains elements related to the conference publicati
 
 ---
 
+### Publicly Available Dataset
+
+The dataset collected as part of this study can be found in the following [Google Drive Folder](https://drive.google.com/drive/folders/1qddHCILX0fAOar8fmZMAVHubi_H0eFhe?usp=sharing).
+
+---
+
+### Notice
+
 This work resulted from a collaboration with Statistics Canada and all opinions and conclusions drawn from the work are of the main authors and do not reflect the opinions of Statistics Canada and/or any affiliates.
